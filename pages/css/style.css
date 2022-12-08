@@ -1,0 +1,165 @@
+/* Start Variables */
+:root {
+    --primary-color : #071e26;
+    --primary-color1 : #0a416b;
+    --secondry-color: rgb(0, 115, 222);
+    --duration: 0.5s;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+/* Start Header */
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+header .container {
+    display: flex;
+    justify-content: center;
+}
+header .container h1 {
+    color: var(--secondry-color);
+}
+/* End Header */
+/* Start Form */
+.form {
+    background-image: url(/pages/imgs/articles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+.form::before {
+    content: "";
+    background-color: rgb( 0 0 0 / 70%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.form .container {
+    display: flex;
+    justify-content: center;
+    padding: 140px 0;
+}
+.form .container form {
+    border: 5px solid var(--primary-color1);
+    margin: 25px 0;
+    padding: 10px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    color: var(--secondry-color);
+    font-size: larger;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.form .container form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form .container form div input {
+    margin-left: 10px;
+}
+.form .container form .saveButton {
+    display: flex;
+    justify-content: center;
+}
+.form .container form .saveButton button{
+    margin-top: 10px;
+    color: var(--secondry-color);
+    padding: 5px 25px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 25px;
+    transition: var(--duration);
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.form .container form .saveButton button:hover{
+    background-color: var(--primary-color1);
+    transition: var(--duration);
+}
+/* End Form */
+/* Start Footer */
+footer {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+footer .container a {
+    padding: 5px;
+    border: 1px solid var(--primary-color1);
+    color: var(--primary-color);
+    background-color: var(--secondry-color);
+    font-size: large;
+    font-weight: 500;
+    transition: var(--duration);
+}
+footer .container a:hover {
+    color: var(--secondry-color);
+    background-color: var(--primary-color1);
+}
+footer .container p {
+    color: var(--primary-color1);
+    font-weight: 700;
+}
+footer .container p span {
+    color: var(--secondry-color);
+    font-weight: 700;
+
+}
+/* End Footer */
