@@ -11,7 +11,7 @@ var mysqlConnection = mysql.createConnection({
   port: "3306",
   user: "sql7583536",
   password: "Ea2NPn5yD1",
-  database: "Articles",
+  database: "sql7583536",
   multipleStatements: true,
 });
 
