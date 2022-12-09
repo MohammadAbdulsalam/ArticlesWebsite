@@ -94,7 +94,7 @@ const server = http.createServer((request, response) => {
                   /* End Header */
                   /* Start Section */
                   section {
-                      background-image: url(articles.jpg);
+                      background-image: url(pages/imgs/articles.jpg);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -301,7 +301,7 @@ const server = http.createServer((request, response) => {
                   /* End Header */
                   /* Start Section */
                   section {
-                      // background-image: url(articles.jpg);
+                      background-image: url(pages/imgs/articles.jpg);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -371,7 +371,7 @@ const server = http.createServer((request, response) => {
                   /* End Section */
                   /* Start Form */
                   .form {
-                      // background-image: url(articles.jpg);
+                      background-image: url(pages/imgs/articles.jpg);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
@@ -700,7 +700,7 @@ const server = http.createServer((request, response) => {
                   /* End Header */
                   /* Start Form */
                   .form {
-                      // background-image: url(articles.jpg);
+                      background-image: url(pages/imgs/articles.jpg);
                       background-repeat: no-repeat;
                       background-size: cover;
                       background-position: center;
