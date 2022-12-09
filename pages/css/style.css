@@ -65,7 +65,7 @@ header .container h1 {
 /* End Header */
 /* Start Form */
 .form {
-    background-image: url(/pages/imgs/articles.jpg);
+    background-image: url(articles.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,6 +105,10 @@ header .container h1 {
     align-items: center;
     margin-bottom: 15px;
 }
+.form .container form div:not(:nth-child(4)) label::after {
+    content: "*";
+    color: red;
+}
 .form .container form div input {
     margin-left: 10px;
 }
@@ -127,6 +131,15 @@ header .container h1 {
 .form .container form .saveButton button:hover{
     background-color: var(--primary-color1);
     transition: var(--duration);
+}
+.form .container form h6 {
+    padding-left:15px;
+    margin: 0;
+}
+.form .container form h6::before {
+    content: "*";
+    color: red;
+    padding-right: 5px;
 }
 /* End Form */
 /* Start Footer */

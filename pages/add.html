@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Add Article</title>
     <style>
         /* Start Variables */
@@ -73,7 +74,7 @@
         /* End Header */
         /* Start Form */
         .form {
-            background-image: url(../pages/imgs/articles.jpg);
+            background-image: url(articles.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -98,7 +99,6 @@
         }
         .form .container form {
             border: 5px solid var(--primary-color1);
-            background-color: var(--secondry-color);
             margin: 25px 0;
             padding: 10px;
             border-bottom-right-radius: 25px;
@@ -113,6 +113,10 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
+        }
+        .form .container form div:not(:nth-child(4)) label::after {
+            content: "*";
+            color: red;
         }
         .form .container form div input {
             margin-left: 10px;
@@ -136,6 +140,15 @@
         .form .container form .saveButton button:hover{
             background-color: var(--primary-color1);
             transition: var(--duration);
+        }
+        .form .container form h6 {
+            padding-left:15px;
+            margin: 0;
+        }
+        .form .container form h6::before {
+            content: "*";
+            color: red;
+            padding-right: 5px;
         }
         /* End Form */
         /* Start Footer */
@@ -209,6 +222,7 @@
                 <div class="saveButton">
                     <button type="submit">Save</button>
                 </div>
+                <h6>Fill Required</h6>
             </form>
         </div>
     </section>
